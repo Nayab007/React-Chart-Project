@@ -1,0 +1,38 @@
+.head-container {
+    width: 30%;
+    height: 100px;
+    border-radius: 15px;
+    margin-top: -20%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(10, 79%, 65%);
+    
+  }
+
+  .mybalance {
+    color: hsl(27, 66%, 92%);
+    font-size: 14px;
+    margin-left: -70%;
+    padding-top: 4%;
+    padding-bottom: 2%;
+  }
+
+  .amount {
+    color: hsl(24, 24%, 96%);
+    font-weight: 400;
+    margin-left: -66%;
+    
+  }
+
+  .logo{
+    display: flex;
+    position: relative;
+    margin-right: -80%;
+    margin-top: -14%;
+    width: 50px;
+    height: 100vh;
+   
+  }

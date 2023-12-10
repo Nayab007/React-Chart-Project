@@ -10,8 +10,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Balance />  
-        <Chart />
+        
       </header>
+      <Chart />
     </div>
     </Router>
   );

@@ -5,7 +5,7 @@ import logo from '../../design/image/logo.svg';
 
 function Balance() {
   return (
-    <div className='head-container'>
+    <div className='container1'>
         <div className='mybalance'>My balance</div>
     <div className='amount'>$ 921.48</div>
     <img className="logo"

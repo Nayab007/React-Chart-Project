@@ -1,13 +1,19 @@
 .head-container {
     width: 30%;
-    height: 100px;
+    height: 50vh;
     border-radius: 15px;
-    margin-top: -20%;
+    margin-top: -28%;
+    margin-left: 34%;
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: hsl(10, 79%, 65%);
+    background-color: hsl(0, 0%, 97%);
     
+  }
+
+  .bottomText {
+    font-size: 18px;
+    color: hsl(25, 47%, 15%)
   }

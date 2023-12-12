@@ -1,38 +1,60 @@
 .container1 {
-    width: 30%;
-    height: 100px;
-    border-radius: 15px;
-    margin-top: -20%;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: hsl(10, 79%, 65%);
-    
+  width: 30%;
+  height: 100px;
+  border-radius: 15px;
+  margin-top: -35%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsl(10, 79%, 65%);
+
+}
+
+.mybalance {
+  color: hsl(27, 66%, 92%);
+  font-size: 14px;
+  margin-left: -70%;
+  padding-top: 4%;
+  padding-bottom: 2%;
+}
+
+.amount {
+  color: hsl(24, 24%, 96%);
+  font-weight: 400;
+  margin-left: -66%;
+}
+
+.logo {
+  display: flex;
+  position: relative;
+  margin-right: -80%;
+  margin-top: -14%;
+  width: 50px;
+  height: 100vh;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .container1 {
+    width: 80%; /* Adjust width for smaller screens */
+    margin-top: -20%; /* Adjust margin top */
   }
 
   .mybalance {
-    color: hsl(27, 66%, 92%);
-    font-size: 14px;
-    margin-left: -70%;
-    padding-top: 4%;
-    padding-bottom: 2%;
+    margin-left: 0; /* Reset margin-left */
+    padding-top: 2%; /* Adjust padding */
+    padding-bottom: 1%; /* Adjust padding */
   }
 
   .amount {
-    color: hsl(24, 24%, 96%);
-    font-weight: 400;
-    margin-left: -66%;
-    
+    margin-left: 0; /* Reset margin-left */
   }
 
-  .logo{
-    display: flex;
-    position: relative;
-    margin-right: -80%;
-    margin-top: -14%;
-    width: 50px;
-    height: 100vh;
-   
+  .logo {
+    margin-right: 0; /* Reset margin-right */
+    margin-top: 0; /* Reset margin-top */
   }
+}
+

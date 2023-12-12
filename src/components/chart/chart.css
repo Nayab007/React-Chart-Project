@@ -1,19 +1,39 @@
+:root {
+  --soft-red: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+  --dark-brown: hsl(25, 47%, 15%);
+  --medium-brown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --pale-orange: hsl(33, 100%, 98%);
+}
+
 .head-container {
-    width: 30%;
+    width: 28%;
     height: 50vh;
     border-radius: 15px;
-    margin-top: -28%;
-    margin-left: 34%;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: -36%;
+    margin-left: 34.5%;
+    padding:  20px;
+    display: flex;  
+    align-items: left;
     flex-direction: column;
-    background-color: hsl(0, 0%, 97%);
+    background-color: var(--pale-orange);
     
   }
+.line{
+  width: 340px;
+  color: var(--cream)
+}
+
 
   .bottomText {
     font-size: 18px;
-    color: hsl(25, 47%, 15%)
+    color: var(--dark-brown);
+    font-weight: "700";
+    
+  }
+
+  .amount1{
+    font-size: 18px;
+    font-weight: "700"
   }

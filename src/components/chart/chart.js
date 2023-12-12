@@ -10,56 +10,63 @@ defaults.responsive = true;
 
 defaults.plugins.title.display = true;
 defaults.plugins.title.align = "start";
-defaults.plugins.title.font.size = 20;
-defaults.plugins.title.color = "black";
+defaults.plugins.title.font.size = 18;
+defaults.plugins.title.color = "hsl(25, 47%, 15%)";
 
 function Chart() {
   return (
-    
-    <div className="head-container">
-      <Bar
-  data={{
-    labels: data.map((data) => data.day),
-    datasets: [
-      {
-        data: data.map((data) => data.amount),
-        backgroundColor: ["hsl(10, 79%, 65%)", "hsl(186, 34%, 60%)"],
-        borderRadius: 5,
-      },
-    ],
-  }}
-  options={{
-    plugins: {
-      title: {
-        text: "Spending - Last 7 Days",
-      },
-      tooltip: {
-        callbacks: {
-          label: function (context) {
-            let label = context.dataset.label || '';
+    <>
+    <div div className="head-container">
+      <Bar 
+        data={{
+          labels: data.map((data) => data.day),
+          datasets: [
+            {
+              
+              label: "Spending",
+              data: data.map((data) => data.amount),
+              backgroundColor: ["hsl(10, 79%, 65%)", "hsl(186, 34%, 60%)"],
+              borderRadius: 5,
+            },
+          ],
+        }}
+        options={{
+          plugins: {
+            title: {
+              text: "Spending - Last 7 Days",
+            },
+            tooltip: {
+              callbacks: {
+                label: function (context) {
+                  let label = context.dataset.label || "";
 
-            if (label) {
-              label += ': ';
-            }
-            
-            if (context.parsed.y !== null) {
-              label += '$' + context.parsed.y.toFixed(2); // Add dollar sign and format amount
-            }
+                  if (label) {
+                    label += ": ";
+                  }
 
-            return label;
+                  if (context.parsed.y !== null) {
+                    label += "$" + context.parsed.y.toFixed(2); // Add dollar sign and format amount
+                  }
+
+                  return label;
+                  
+                },
+              },
+            },
           },
-        },
-      },
-    },
-  }}
-/>
+        }}
+        
+      />
+      
+<hr className="line" />
+      <div className="bottomText">Total this month</div>
+      <div className="amount1">$ 478.33</div>
+      <div>+ 2.4%</div>
+      <div>from last month</div>
+      </div>
 
-      <div className="bottomText">
-        Total this month
-    </div>
-    </div>
-    
-   
+
+      </>
   );
 }
 

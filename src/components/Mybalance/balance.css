@@ -18,12 +18,14 @@
   margin-left: -70%;
   padding-top: 4%;
   padding-bottom: 2%;
+  font-family: "DM Sans"
 }
 
 .amount {
   color: hsl(24, 24%, 96%);
   font-weight: 400;
   margin-left: -66%;
+  font-family: "DM Sans";
 }
 
 .logo {

@@ -8,32 +8,53 @@
 }
 
 .head-container {
-    width: 28%;
-    height: 50vh;
-    border-radius: 15px;
-    margin-top: -36%;
-    margin-left: 34.5%;
-    padding:  20px;
-    display: flex;  
-    align-items: left;
-    flex-direction: column;
-    background-color: var(--pale-orange);
-    
-  }
-.line{
-  width: 340px;
-  color: var(--cream)
+  width: 28%;
+  height: 50vh;
+  border-radius: 15px;
+  margin-top: -36%;
+  margin-left: 34.5%;
+  padding:  20px;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  background-color: var(--pale-orange);
+  font-family: "DM Sans";
+}
+.line {
+  width: 100%;
+  margin: 0, auto;
+  background-color: var(--medium-brown);
 }
 
+.bottomText {
+  font-size: 0.8rem;
+  color: var(--medium-brown);
+  font-weight: 400;
+  text-align: left;
+  margin-top: 10px;
+}
+.bottomText1 {
+  font-size: 0.8rem;
+  color: var(--medium-brown);
+  font-weight: 400;
+  text-align: right;
+  margin: 0;
+}
 
-  .bottomText {
-    font-size: 18px;
-    color: var(--dark-brown);
-    font-weight: "700";
-    
-  }
-
-  .amount1{
-    font-size: 18px;
-    font-weight: "700"
-  }
+.amount1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 10;
+  letter-spacing: 1px;
+  text-align: left;
+  color: var(--dark-brown);
+}
+.amount2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 0.9rem;
+  font-family: "DM Sans";
+  text-align: right;
+  margin: 0;
+  color: var(--dark-brown);
+}

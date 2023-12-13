@@ -1,0 +1,12 @@
+.container {
+  width: 90%;
+  height: 45vh;
+  border-radius: 15px;
+  margin-top: -5%;
+  margin-left: 2.5%;
+  padding:  5px;
+  display: flex;  
+  align-items: left;
+  flex-direction: column;
+  
+}

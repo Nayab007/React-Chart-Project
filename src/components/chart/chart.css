@@ -22,8 +22,10 @@
 }
 .line {
   width: 100%;
+  
   margin: 0, auto;
-  background-color: var(--medium-brown);
+  border-style: solid;
+  color: var(--cream);
 }
 
 .bottomText {

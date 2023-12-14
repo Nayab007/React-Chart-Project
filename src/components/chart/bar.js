@@ -13,28 +13,40 @@ defaults.plugins.title.align = "start";
 defaults.plugins.title.font.size = 10;
 defaults.plugins.title.color = "hsl(25, 47%, 15%)";
 
+
 function Barfun() {
   return (
     <div className="container">
       <Bar
         data={{
+          
           labels: data.map((data) => data.day),
           datasets: [
+            
             {
+              
               label: "Spending",
+              
               data: data.map((data) => data.amount),
-              backgroundColor: ["hsl(10, 79%, 65%)", "hsl(186, 34%, 60%)"],
+              backgroundColor: data.map((_, index) =>
+                index === 2 ? "hsl(186, 34%, 60%)" : "hsl(10, 79%, 65%)"
+              ),
+              
               borderRadius: 5,
+             
             },
           ],
+          
         }}
         options={{
           plugins: {
             title: {
               text: "Spending - Last 7 Days",
+              
               font: {
                 size: 20, // Adjust the font size to your desired value
-                family: "DM Sans"
+                family: "DM Sans",
+                
               }
             },
             tooltip: {
@@ -48,7 +60,10 @@ function Barfun() {
 
                   if (context.parsed.y !== null) {
                     label += "$" + context.parsed.y.toFixed(2); // Add dollar sign and format amount
-                  }
+                    
+                  };
+
+                  
 
                   return label;
                 },

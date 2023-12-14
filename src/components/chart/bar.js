@@ -19,56 +19,59 @@ function Barfun() {
     <div className="container">
       <Bar
         data={{
-          
-          labels: data.map((data) => data.day),
+          labels: data.map(() => ''), // Empty labels array to exclude weekdays
           datasets: [
-            
+
             {
-              
+
               label: "Spending",
-              
+
               data: data.map((data) => data.amount),
               backgroundColor: data.map((_, index) =>
                 index === 2 ? "hsl(186, 34%, 60%)" : "hsl(10, 79%, 65%)"
               ),
-              
+
               borderRadius: 5,
-             
+              pointStyle: 'circle', // Set the point style to 'circle'
             },
           ],
-          
+
         }}
         options={{
           plugins: {
             title: {
               text: "Spending - Last 7 Days",
-              
+
               font: {
-                size: 20, // Adjust the font size to your desired value
+                size: 20,
                 family: "DM Sans",
-                
-              }
+              },
             },
             tooltip: {
+              enabled: true,
+              intersect: false,
+              mode: 'index',
+              position: 'nearest',
               callbacks: {
                 label: function (context) {
-                  let label = context.dataset.label || "";
-
-                  if (label) {
-                    label += ": ";
-                  }
-
+                  let label = ''; // Remove the color box icon
                   if (context.parsed.y !== null) {
-                    label += "$" + context.parsed.y.toFixed(2); // Add dollar sign and format amount
-                    
-                  };
-
-                  
-
+                    label += '$' + context.parsed.y.toFixed(2);
+                  }
                   return label;
                 },
               },
+              backgroundColor: "hsl(25, 47%, 15%)",
+              bodyFontColor: "white",
+              cornerRadius: 5,
+              displayColors: false,
             },
+          },
+          tooltips: {
+            enabled: false,
+          },
+          legend: {
+            display: false, // Hide the legend
           },
         }}
       />

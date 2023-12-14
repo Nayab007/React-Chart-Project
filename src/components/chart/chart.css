@@ -13,7 +13,7 @@
   border-radius: 15px;
   margin-top: -36%;
   margin-left: 34.5%;
-  padding:  20px;
+  padding: 20px;
   padding-bottom: 10px;
   display: flex;
   align-items: left;
@@ -23,8 +23,7 @@
 }
 .line {
   width: 100%;
-  
-  margin: 0, auto;
+  margin-top: -5px;
   border-style: solid;
   color: var(--cream);
 }

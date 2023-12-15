@@ -1,6 +1,6 @@
 import React from "react";
 import "./chart.css";
-import Barfun from './bar';
+import Barfun from "./bar";
 
 function Chart() {
   return (

@@ -7,7 +7,8 @@
   --pale-orange: hsl(33, 100%, 98%);
 }
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   height: 100%;

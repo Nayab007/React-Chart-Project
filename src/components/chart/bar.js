@@ -19,7 +19,7 @@ function Barfun() {
     <div className="container">
       <Bar
         data={{
-          labels: data.map(() => ''), // Empty labels array to exclude weekdays
+          labels: data.map(() => ""), // Empty labels array to exclude weekdays
           datasets: [
 
             {
@@ -32,7 +32,7 @@ function Barfun() {
               ),
 
               borderRadius: 5,
-              pointStyle: 'circle', // Set the point style to 'circle'
+              pointStyle: "circle", // Set the point style to 'circle'
             },
           ],
 
@@ -50,13 +50,13 @@ function Barfun() {
             tooltip: {
               enabled: true,
               intersect: false,
-              mode: 'index',
-              position: 'nearest',
+              mode: "index",
+              position: "nearest",
               callbacks: {
                 label: function (context) {
-                  let label = ''; // Remove the color box icon
+                  let label = ""; // Remove the color box icon
                   if (context.parsed.y !== null) {
-                    label += '$' + context.parsed.y.toFixed(2);
+                    label += "$" + context.parsed.y.toFixed(2);
                   }
                   return label;
                 },

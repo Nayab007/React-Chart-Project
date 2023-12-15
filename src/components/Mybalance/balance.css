@@ -23,7 +23,7 @@
 
 .amount {
   color: hsl(24, 24%, 96%);
-  font-weight: 400;
+  font-weight: 700;
   margin-left: -66%;
   font-family: "DM Sans";
 }
@@ -38,25 +38,30 @@
 }
 
 /* Media queries for responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 376px) {
   .container1 {
-    width: 80%; /* Adjust width for smaller screens */
-    margin-top: -20%; /* Adjust margin top */
+    width: 90%; /* Adjust width for smaller screens */
+    margin-top: -120%; /* Adjust margin top */
   }
 
   .mybalance {
-    margin-left: 0; /* Reset margin-left */
-    padding-top: 2%; /* Adjust padding */
+    margin-left: -40; /* Reset margin-left */
+    padding-top: 4%; /* Adjust padding */
     padding-bottom: 1%; /* Adjust padding */
+    font-size: 16px;
+    
   }
 
   .amount {
-    margin-left: 0; /* Reset margin-left */
+    margin: 10x; /* Reset margin-left */
+    font-size: 26px;
+    font-weight: 700;
   }
 
   .logo {
-    margin-right: 0; /* Reset margin-right */
-    margin-top: 0; /* Reset margin-top */
+    margin-right: 6; 
+    margin-top: -70px;
+    align-items: center;
   }
 }
 

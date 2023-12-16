@@ -61,3 +61,14 @@
   margin-top: -40px;
   color: var(--dark-brown);
 }
+
+@media (max-width: 376px) {
+  .head-container {
+    width: 85%; /* Adjust width for smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+    margin: 0 auto 10% auto; /* Center align and add space below the container */
+    padding: 10px; /* Adjust padding for smaller screens */
+    border-radius: 10px; /* Smaller border radius for smaller screens */
+    margin-top: -76vh; /* Move the container upwards */
+  }
+}

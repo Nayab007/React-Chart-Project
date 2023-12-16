@@ -41,7 +41,7 @@
 @media (max-width: 376px) {
   .container1 {
     width: 90%; /* Adjust width for smaller screens */
-    margin-top: -120%; /* Adjust margin top */
+    margin-top: -130%; /* Adjust margin top */
   }
 
   .mybalance {

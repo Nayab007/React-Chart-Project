@@ -62,16 +62,14 @@
   color: var(--dark-brown);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   .head-container {
     width: 85%; 
     height: 50vh;
-    margin-top: -100%;
     margin-left: 4%;
-    padding: 10px; 
+    padding: 20px; 
     border-radius: 10px; 
     margin-top: -76vh;
-    background-color: aqua; 
   }
 }
 

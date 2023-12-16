@@ -13,8 +13,11 @@ function App() {
 
         </header>
         <Chart />
+        <footer class="footer">Build with <span class="heart">&#10084;</span> by Nayab</footer>
       </div>
+      
     </Router>
+     
   );
 }
 

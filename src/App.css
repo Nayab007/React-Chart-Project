@@ -42,6 +42,13 @@ html {
   color: white;
 }
 
+
+.heart {
+  color: red;
+}
+.footer {
+  margin-top: 20px;
+}
 .App-link {
   color: #61dafb;
 }

@@ -40,20 +40,47 @@
 /* Media queries for responsiveness */
 @media (max-width: 376px) {
   .container1 {
-    width: 90%; /* Adjust width for smaller screens */
-    margin-top: -130%; /* Adjust margin top */
+    width: 90%; 
+    margin-top: -160%; 
   }
 
   .mybalance {
-    margin-left: -40; /* Reset margin-left */
-    padding-top: 4%; /* Adjust padding */
-    padding-bottom: 1%; /* Adjust padding */
+    margin-left: -40; 
+    padding-top: 4%; 
+    padding-bottom: 1%; 
     font-size: 16px;
     
   }
 
   .amount {
-    margin: 10x; /* Reset margin-left */
+    margin: 10x; 
+    font-size: 26px;
+    font-weight: 700;
+  }
+
+  .logo {
+    margin-right: 6; 
+    margin-top: -70px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .container1 {
+    width: 90%; 
+    margin-top: -100%; 
+  }
+
+  .mybalance {
+    margin-left: -40; 
+    padding-top: 4%; 
+    padding-bottom: 1%; 
+    font-size: 16px;
+    
+  }
+
+  .amount {
+    margin: 10x; 
     font-size: 26px;
     font-weight: 700;
   }

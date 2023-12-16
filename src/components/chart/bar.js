@@ -19,7 +19,7 @@ function Barfun() {
     <div className="container">
       <Bar
         data={{
-          labels: data.map(() => ""), // Empty labels array to exclude weekdays
+          labels: data.map((data) => data.day), // Empty labels array to exclude weekdays
           datasets: [
 
             {

@@ -12,7 +12,7 @@ Thanks for checking out this front-end coding challenge.
 
 Here is the Link to the live webpage
 
-https://reactchartproject.netlify.app/
+https://reactchartsite.netlify.app/
 
 ## The challenge
 

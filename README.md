@@ -11,7 +11,6 @@ Thanks for checking out this front-end coding challenge.
 **To do this challenge, you need a decent understanding of HTML, CSS, and ReactJS Library.** I want to use ReactJs because I want to build something different instead of using just vanilla JS. I thought it would be good to make this page in REACTJS and use my style to make it a bit different. 
 
 Here is the Link to the live webpage
-
 https://reactchartsite.netlify.app/
 
 ## The challenge
